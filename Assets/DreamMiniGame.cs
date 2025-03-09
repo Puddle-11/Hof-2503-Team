@@ -7,16 +7,18 @@ public class DreamMiniGame : MonoBehaviour
 {
 
     [SerializeField] GameObject Cursor;
-    Vector3 LeftBoundry;
-    Vector3 RightBoundry;
-    Vector3 Move;
-    Vector3 Temp;
-
+    [SerializeField] private float speed;
+    [SerializeField] private float minX;
+    [SerializeField] private float maxX;
+    private float target;
+    private bool movingLeft;
+    [SerializeField] private Transform arrow;
+    private RectTransform rectTransform;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        LeftBoundry = new Vector3(-123, 30, 0);
-        RightBoundry = new Vector3(123, 30, 0);
+        target = minX;
+        rectTransform = arrow.GetComponent<RectTransform>();
     }
 
     // Update is called once per frame
@@ -27,8 +29,21 @@ public class DreamMiniGame : MonoBehaviour
 
     void MoveCursor()
     {
-        Move = Cursor.transform.position;
-        Temp = new Vector3(Move.x * 1.25f * Time.deltaTime, Move.y, Move.z);
-        Cursor.transform.position = Temp;
+        
+        if (rectTransform.localPosition.x < minX )
+        {
+            movingLeft = true;
+            target = maxX;
+        }
+        if (rectTransform.localPosition.x > maxX)
+        {
+            movingLeft = false;
+
+            target = minX;
+        }
+        
+        
+        rectTransform.localPosition += new Vector3( movingLeft ?  speed : -speed, 0, 0);
+        
     }
 }
