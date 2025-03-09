@@ -6,7 +6,7 @@ public class DreamInvntory : MonoBehaviour
 {
     public static DreamInvntory instance;
     [SerializeField] private Slider fillBar;
-    [SerializeField] private TextMeshPro textObject;
+    [SerializeField] private TextMeshProUGUI textObject;
     public float dreamsNeeded;
     public float dreamBar;
     public bool endSequence;
