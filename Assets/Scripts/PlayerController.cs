@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Vector2 minMaxPitch;
     [SerializeField] private float cameraSens;
     [SerializeField] private Transform cameraAnchor;
-    
+    public GameObject mainCam;
     private float rotX;
     [SerializeField] private bool invertCamera;
     // Start is called once before the first execution of Update after the MonoBehaviour is created

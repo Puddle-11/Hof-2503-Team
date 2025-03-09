@@ -298,7 +298,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cf4bccaf3b7da2409ea6c977434755d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dreamValue: 5
+  dreamValue: 1
   prompt: {fileID: 6457125902073834102}
 --- !u!1 &8507581740917679194
 GameObject:
