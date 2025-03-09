@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using System;
-
+[ExecuteAlways]
 public class DreamMiniGame : MonoBehaviour
 {
 
@@ -12,6 +12,7 @@ public class DreamMiniGame : MonoBehaviour
     [SerializeField] private float minX;
     [SerializeField] private float maxX;
     [SerializeField] private float bonusPadding;
+    [SerializeField] private float baseDelta;
     private float target;
     private bool movingLeft;
     private bool isKeyDown;
@@ -20,6 +21,7 @@ public class DreamMiniGame : MonoBehaviour
     [SerializeField] private Transform inBounds;
     private RectTransform arrowRectTransform;
     private RectTransform inBoundsRectTransform;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -29,18 +31,22 @@ public class DreamMiniGame : MonoBehaviour
         arrowRectTransform = arrow.GetComponent<RectTransform>();
         inBoundsRectTransform = inBounds.GetComponent<RectTransform>();
 
-        float rtX = inBoundsRectTransform.sizeDelta.x;
-        inBoundsRectTransform.sizeDelta = new Vector2(rtX += bonusPadding, inBoundsRectTransform.sizeDelta.y);
+        
     }
-
+    
     // Update is called once per frame
     void Update()
     {
+        #if !UNITY_EDITOR
         if (Input.GetKeyDown(KeyCode.E))
         {
             isKeyDown = true;
         }
         MoveCursor();
+        #endif
+        
+        float rtX = baseDelta;
+       // inBoundsRectTransform.sizeDelta = new Vector2(rtX += bonusPadding, inBoundsRectTransform.sizeDelta.y);
     }
 
     bool GetTookDream()

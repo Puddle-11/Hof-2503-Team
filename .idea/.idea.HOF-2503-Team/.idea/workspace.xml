@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="212b6c1b-40c8-4b42-a88a-852f9c98122c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DreamInvntory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DreamInvntory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
+    <list default="true" id="def1b866-3ef8-4137-8d16-d5d66b4ce25c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.HOF-2503-Team/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HOF-2503-Team/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DreamMiniGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DreamMiniGame.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Scrolling Simple Noise - Copy.shadersubgraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Scrolling Simple Noise - Copy.shadersubgraph" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Scrolling Simple Noise.shadersubgraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Scrolling Simple Noise.shadersubgraph" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Water - Copy.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Water - Copy.shadergraph" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Water.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Water.shadergraph" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main/Global Volume Profile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main/Global Volume Profile.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Tileable.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/Tileable.shadergraph" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,15 +86,13 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="37476">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="37476" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="runtimes">
-        <list>
-          <MonoRuntime />
-        </list>
+        <list />
       </option>
       <option name="selectedOptions">
         <list />
