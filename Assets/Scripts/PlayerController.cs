@@ -75,9 +75,10 @@ public class PlayerController : MonoBehaviour
         }
         camFollow.offset = Vector3.Lerp(baseCameraPos, sprintCameraPos, smoothCurveSprintCam.Evaluate(cameraBalance));
         staminaSlider.value = currStamina;
-        staminaSlider.fillRect.GetComponent<Image>().color = staminaColor.Evaluate(currStamina * (maxStamina/1.0f) );
+        float temp = maxStamina > 0 ? currStamina * (1 / maxStamina) : 0;
+        staminaSlider.fillRect.GetComponent<Image>().color = staminaColor.Evaluate(!tired ? temp : 0);
         Move(new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")), speed);
-        Console.WriteLine("t");
+      
         if (Input.GetKeyDown(KeyCode.Space))
         {
             wantsToJump = true;
