@@ -4,6 +4,7 @@ using UnityEngine.Assertions.Must;
 [RequireComponent(typeof(Rigidbody))]
 public class PlayerController : MonoBehaviour
 {
+    public static PlayerController instance;
     [SerializeField] private float speed;
     [SerializeField] private float height;
     private Rigidbody rb;
@@ -19,6 +20,15 @@ public class PlayerController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Debug.Log("Two instances of player controller found");
+            Destroy(gameObject);
+        }
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
         rb = GetComponent<Rigidbody>();
