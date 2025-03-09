@@ -726,6 +726,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 1ce506faa94a4c740be9e823e58ccaee, type: 3}
+--- !u!1 &1218801742 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 506811358281807792, guid: fc25b98b87325be43a515fa008509cca, type: 3}
+  m_PrefabInstance: {fileID: 4592331167464426679}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1401215875
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -898,13 +903,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5211355034466434974, guid: fc25b98b87325be43a515fa008509cca, type: 3}
+      propertyPath: mainCam
+      value: 
+      objectReference: {fileID: 1218801742}
     - target: {fileID: 5295652528917415508, guid: fc25b98b87325be43a515fa008509cca, type: 3}
       propertyPath: fillBar
       value: 
       objectReference: {fileID: 590693284}
     - target: {fileID: 5295652528917415508, guid: fc25b98b87325be43a515fa008509cca, type: 3}
       propertyPath: dreamsNeeded
-      value: 25
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1083,6 +1092,10 @@ PrefabInstance:
     - target: {fileID: 2874539890073915173, guid: 1ce506faa94a4c740be9e823e58ccaee, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4917311347787708351, guid: 1ce506faa94a4c740be9e823e58ccaee, type: 3}
+      propertyPath: dreamValue
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6871794529162649900, guid: 1ce506faa94a4c740be9e823e58ccaee, type: 3}
       propertyPath: m_Name
