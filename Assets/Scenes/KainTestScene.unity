@@ -345,10 +345,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 750744581}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 30}
-  m_SizeDelta: {x: 62.0677, y: 77.5257}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 125, y: 30}
+  m_SizeDelta: {x: 62.067703, y: 77.5257}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &610856574
 MonoBehaviour:
@@ -504,7 +504,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00016022, y: 10.864}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 250.5, y: 21.728}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &750744582
@@ -520,6 +520,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Cursor: {fileID: 610856572}
+  speed: 1
+  minX: -118
+  maxX: 118
+  bonusPadding: 20
+  arrow: {fileID: 610856573}
+  inBounds: {fileID: 1432878106}
 --- !u!1 &1007010785
 GameObject:
   m_ObjectHideFlags: 0
@@ -570,7 +576,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.01570177, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -720,7 +726,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 0.10792494, a: 1}
+  m_Color: {r: 0.04152572, g: 1, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
