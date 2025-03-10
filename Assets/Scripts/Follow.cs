@@ -29,7 +29,6 @@ public class Follow : MonoBehaviour
         }
 	    float finalDist = Vector3.Distance(transform.position, targetPos);
 	    float factor = dampening.Evaluate( finalDist > 1 ? 1 : finalDist);
-	    
 	    transform.position = Vector3.MoveTowards(transform.position, targetPos, moveSpeed * factor);
     }
 }
