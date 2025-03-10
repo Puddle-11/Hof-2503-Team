@@ -29,15 +29,20 @@ public class HouseCollider : MonoBehaviour
 		if (failed && inBounds)
 		{
 			inBounds = false;
-			CrossFade.instance.StartCrossFade(MovePLayer, null, 0.5f);
+			if(CrossFade.instance != null) CrossFade.instance.StartCrossFade(MovePLayer, null, 0.5f);
+			else
+			{
+				MovePLayer();
+			}			
 		}
 	}
 	
 	private void MovePLayer()
 	{
-			PlayerController.instance.gameObject.transform.position = doorstepRespawnPoint.position;
+		PlayerController.instance.gameObject.transform.position = doorstepRespawnPoint.position;
 		
 	}
+	
 	void HouseFailed()
 	{
 		failed = true;
@@ -48,7 +53,7 @@ public class HouseCollider : MonoBehaviour
 		if (other.gameObject.tag == "Player")
 		{
 			inBounds = true;
-
+			houseFront.SetActive(false);
 			
 		}
 	}
@@ -58,6 +63,8 @@ public class HouseCollider : MonoBehaviour
 		if (other.gameObject.tag == "Player")
 		{
 			inBounds = false;
+			houseFront.SetActive(true);
+
 		}
 	}
 }
