@@ -5,11 +5,11 @@ using System.Collections.Generic;
 public class LightSwitch : MonoBehaviour
 {
 
-    public GameObject txtToDisplay; // Text to display when player is near switch
+    [SerializeField] private GameObject txtToDisplay; // Text to display when player is near switch
 
-    private bool isInTheZone = true; // Is the switch on or off
+    private bool isInTheZone = true; // Is the player in the zone of the switch
 
-    public GameObject lights; // lights controlled by this switch
+    [SerializeField] public GameObject lights; // lights controlled by this switch
 
     private void Start()
     {
@@ -34,7 +34,7 @@ public class LightSwitch : MonoBehaviour
     {
         if (other.gameObject.tag == "Player") // If the player enters the zone
         {
-            isInTheZone = true; // Set the switch to on
+            isInTheZone = true; // Player is in the zone
             txtToDisplay.SetActive(true); // Show the text
         }
     }
@@ -43,7 +43,7 @@ public class LightSwitch : MonoBehaviour
     {
         if (other.gameObject.tag == "Player") // If the player exits the zone
         {
-            isInTheZone = false; // Set the switch to off
+            isInTheZone = false; // Player isn't in the zone
             txtToDisplay.SetActive(false); // Hide the text
         }
     }
