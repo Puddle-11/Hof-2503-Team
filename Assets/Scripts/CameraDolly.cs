@@ -36,9 +36,15 @@ public class CameraDolly : MonoBehaviour
 	    
 	    changeSceneQueued = true;
 	    yield return new WaitForSeconds(sceneHangTime);
-	    SceneManager.LoadScene(nextScene);
+	    CrossFade.instance.StartCrossFade(ChangeScene, null, 1);
 	    
 	    changeSceneQueued = false;
+    }
+    
+    private void ChangeScene()
+    {
+	    
+	    SceneManager.LoadScene(nextScene);
     }
     public void OnDrawGizmos()
     {

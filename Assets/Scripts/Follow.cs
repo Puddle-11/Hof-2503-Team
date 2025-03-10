@@ -10,6 +10,7 @@ public class Follow : MonoBehaviour
     [SerializeField] private float moveSpeed;
     [SerializeField] private float maxDist;
     [SerializeField] private AnimationCurve dampening;
+    [SerializeField] private float cameraSize;
     // Update is called once per frame
     void FixedUpdate()
     { 
@@ -20,7 +21,7 @@ public class Follow : MonoBehaviour
 	    RaycastHit hit;
 	    if (Physics.Raycast(target.position, dir, out hit, distance, mask))
 	    {
-		    targetPos = hit.point;
+		    targetPos = hit.point - dir.normalized * cameraSize;
 	    }
         else
         {
