@@ -1,13 +1,16 @@
 using System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 public class DreamInvntory : MonoBehaviour
 {
     public static DreamInvntory instance;
     [SerializeField] private Slider fillBar;
-    [SerializeField] private float dreamsNeeded;
+    [SerializeField] private TextMeshProUGUI textObject;
+    public float dreamsNeeded;
     public float dreamBar;
     public bool endSequence;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -25,6 +28,7 @@ public class DreamInvntory : MonoBehaviour
     private void Update()
     {
         fillBar.value = dreamBar / dreamsNeeded;
+        textObject.text = dreamBar + "/" + dreamsNeeded;
         if (fillBar.value >= 1 && !endSequence)
         {
             endSequence = true;

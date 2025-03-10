@@ -3918,7 +3918,7 @@
     "m_Title": "Generate Ripples",
     "m_Position": {
         "x": -3564.0,
-        "y": 231.00001525878907
+        "y": 231.0
     }
 }
 
@@ -4710,7 +4710,7 @@
     "m_Title": "Convert to viewspace",
     "m_Position": {
         "x": -1775.0,
-        "y": 2778.999755859375
+        "y": 2779.0
     }
 }
 
@@ -4925,7 +4925,7 @@
     "m_Title": "Convert to Viewspace Units",
     "m_Position": {
         "x": -1754.0,
-        "y": 3119.000244140625
+        "y": 3119.0
     }
 }
 
@@ -5006,6 +5006,7 @@
     "m_SourceType": 1,
     "m_FunctionName": "GetClipValues",
     "m_FunctionSource": "",
+    "m_FunctionSourceUsePragmas": true,
     "m_FunctionBody": "Out = float2(\r\nUNITY_NEAR_CLIP_VALUE,\r\nUNITY_RAW_FAR_CLIP_VALUE\r\n);\n"
 }
 
@@ -5210,7 +5211,7 @@
     "m_Title": "Surface Depth",
     "m_Position": {
         "x": -2552.0,
-        "y": 3276.000244140625
+        "y": 3276.0
     }
 }
 
@@ -9039,7 +9040,7 @@
     "m_Title": "Depth Difference",
     "m_Position": {
         "x": -1356.0,
-        "y": 2938.999755859375
+        "y": 2939.0
     }
 }
 
@@ -10074,7 +10075,7 @@
     "m_Title": "Add Base Water Color",
     "m_Position": {
         "x": -2892.0,
-        "y": -251.99996948242188
+        "y": -252.0
     }
 }
 
