@@ -435,7 +435,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -444,7 +444,7 @@ AudioSource:
   MinDistance: 1
   MaxDistance: 500
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -685,7 +685,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AudioDevice: {fileID: 664660587}
-  AudioClips: []
+  AudioClips:
+  - {fileID: 8300000, guid: d9035fe389259fd47afec3a942dc2f01, type: 3}
+  - {fileID: 8300000, guid: c64d8cd6972781e4483406d7b4d20b86, type: 3}
+  - {fileID: 8300000, guid: 1298829e77f8eb64daf785c0f9aa3b20, type: 3}
+  - {fileID: 8300000, guid: 34ff96ab9258c8d49b5fa7752d3d1481, type: 3}
+  - {fileID: 8300000, guid: 5fb0cdf36ddcac34a8c794242cb12922, type: 3}
+  - {fileID: 8300000, guid: 958d9db4cbab8594aaca6a8633a5dbe6, type: 3}
+  - {fileID: 8300000, guid: 5f9e4af6a250fce4ea62f80af534a874, type: 3}
+  - {fileID: 8300000, guid: a5501b6c634f798478b8aa69c25966da, type: 3}
   SphereRadius: {fileID: 1570601409}
 --- !u!4 &814921412
 Transform:
@@ -965,7 +973,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.5
+  m_Radius: 5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1570601410
 MonoBehaviour:
