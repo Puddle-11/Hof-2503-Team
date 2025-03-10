@@ -6021,6 +6021,7 @@ MonoBehaviour:
   doorstepRespawnPoint: {fileID: 365935460}
   houseFront: {fileID: 1209876955}
   allDreams:
+  - {fileID: 0}
   - {fileID: 281410608}
   - {fileID: 1978542206}
 --- !u!1001 &978178082
@@ -10706,7 +10707,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2874539890073915173, guid: 1ce506faa94a4c740be9e823e58ccaee, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.34
+      value: -5.45
       objectReference: {fileID: 0}
     - target: {fileID: 2874539890073915173, guid: 1ce506faa94a4c740be9e823e58ccaee, type: 3}
       propertyPath: m_LocalRotation.w
