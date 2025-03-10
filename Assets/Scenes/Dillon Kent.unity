@@ -769,6 +769,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1010512437381058339, guid: 7fadcd6e00af6da45828a9fab00dfe86, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8487940607827512719, guid: 3dd68d186b5f03b4b99c8af1df2f1d50, type: 3}
     - target: {fileID: 6343319019153670140, guid: 7fadcd6e00af6da45828a9fab00dfe86, type: 3}
       propertyPath: lights
       value: 
@@ -777,6 +781,10 @@ PrefabInstance:
       propertyPath: txtToDisplay
       value: 
       objectReference: {fileID: 324060530}
+    - target: {fileID: 6704410803738972017, guid: 7fadcd6e00af6da45828a9fab00dfe86, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: -425572506602419492, guid: 3dd68d186b5f03b4b99c8af1df2f1d50, type: 3}
     - target: {fileID: 8633306051498584206, guid: 7fadcd6e00af6da45828a9fab00dfe86, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -824,8 +832,30 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 9012155511516866842, guid: 7fadcd6e00af6da45828a9fab00dfe86, type: 3}
+      insertIndex: 3
+      addedObject: {fileID: 5050975947223702984}
   m_SourcePrefab: {fileID: 100100000, guid: 7fadcd6e00af6da45828a9fab00dfe86, type: 3}
+--- !u!1 &5050975947223702983 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9012155511516866842, guid: 7fadcd6e00af6da45828a9fab00dfe86, type: 3}
+  m_PrefabInstance: {fileID: 5050975947223702982}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5050975947223702984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5050975947223702983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63fe862d31727e8418270ee1fe389997, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  txtToDisplay: {fileID: 324060530}
+  lights: {fileID: 1741386636}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

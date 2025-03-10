@@ -68,7 +68,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: -425572506602419492, guid: 3dd68d186b5f03b4b99c8af1df2f1d50, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -255,6 +255,7 @@ GameObject:
   - component: {fileID: 8633306051498584206}
   - component: {fileID: 2697768037147462257}
   - component: {fileID: 1010512437381058339}
+  - component: {fileID: 5786438583743325879}
   - component: {fileID: 1246813183563731430}
   m_Layer: 0
   m_Name: LightSwitch
@@ -310,7 +311,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 8487940607827512719, guid: 3dd68d186b5f03b4b99c8af1df2f1d50, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -332,6 +333,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &5786438583743325879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9012155511516866842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63fe862d31727e8418270ee1fe389997, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  txtToDisplay: {fileID: 0}
+  lights: {fileID: 0}
 --- !u!65 &1246813183563731430
 BoxCollider:
   m_ObjectHideFlags: 0
