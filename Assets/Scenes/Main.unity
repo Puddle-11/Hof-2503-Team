@@ -419,6 +419,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2874539890073915173, guid: 1ce506faa94a4c740be9e823e58ccaee, type: 3}
   m_PrefabInstance: {fileID: 1773580792}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &253168311 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4917311347787708351, guid: 1ce506faa94a4c740be9e823e58ccaee, type: 3}
+  m_PrefabInstance: {fileID: 1773580792}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cf4bccaf3b7da2409ea6c977434755d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &255368233
 GameObject:
   m_ObjectHideFlags: 0
@@ -522,13 +533,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 255368233}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -33.499, y: 5.131, z: 34.771}
+  m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
+  m_LocalPosition: {x: -4.0289993, y: 4.769003, z: 1.6910038}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 253168310}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 966410186}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &279917024
 PrefabInstance:
@@ -1689,6 +1700,7 @@ Transform:
   m_Children:
   - {fileID: 365935460}
   - {fileID: 1209876956}
+  - {fileID: 255368236}
   m_Father: {fileID: 519242623}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &966410187
@@ -1727,7 +1739,7 @@ MonoBehaviour:
   doorstepRespawnPoint: {fileID: 365935460}
   houseFront: {fileID: 1209876955}
   allDreams:
-  - {fileID: 0}
+  - {fileID: 253168311}
 --- !u!1001 &978178082
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3658,4 +3670,3 @@ SceneRoots:
   - {fileID: 554826798}
   - {fileID: 1684801965}
   - {fileID: 637668638}
-  - {fileID: 255368236}

@@ -3,10 +3,12 @@ using UnityEngine;
 public class Dream : MonoBehaviour
 {
 	private bool inRange;
+	[SerializeField] private bool forgiving;
 	[SerializeField] private float dreamValue;
 	[SerializeField] private GameObject prompt;
 	public delegate void FailFunc();
 	public FailFunc failFuncEvent;
+	
 	public void Update()
 	{
 		
@@ -18,6 +20,7 @@ public class Dream : MonoBehaviour
 			}
 		}
 		prompt.SetActive(inRange);
+		
 	}
 	
 	public void Collect()
@@ -29,8 +32,10 @@ public class Dream : MonoBehaviour
 	public void FailCollect()
 	{
 		failFuncEvent?.Invoke();
-		Destroy(gameObject);
-		
+		if (!forgiving)
+		{
+			Destroy(gameObject);
+		}
 	}
 	
 	public void OnTriggerEnter(Collider other)
