@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
@@ -18,7 +19,7 @@ public class GameManager : MonoBehaviour
     public Image playerHPBar;
 
     public GameObject player;
-
+    public bool lost = false;
     public bool isPaused;
     int enemyCount;
 
@@ -53,8 +54,9 @@ public class GameManager : MonoBehaviour
     public void time()
     {
         timer -= Time.deltaTime;
-        if (timer <= 0)
+        if (timer <= 0 && !lost)
         {
+            lost = true;
             youLose();
         }
     }
@@ -92,8 +94,24 @@ public class GameManager : MonoBehaviour
 
     public void youLose()
     {
+        
         statePause();
         menuActive = menuLose;
         menuActive.SetActive(isPaused);
+    }
+    public void unpause()
+    {
+        stateUnPause();
+    }
+    
+    public void restart()
+    {
+        SceneManager.LoadScene("Main");
+    }
+    
+    public void Quit()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene("Main Menu");
     }
 }
