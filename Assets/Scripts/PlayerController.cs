@@ -29,10 +29,14 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Gradient staminaColor;
     [SerializeField] private AnimationCurve smoothCurveSprintCam;
     [SerializeField] private float cameraChangeSpeed;
+    [SerializeField] private Animator playerAnim;
     private float cameraBalance;
+    [SerializeField] private bool flipSprite;
+    [SerializeField] private SpriteRenderer sp;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        
         speed = baseSpeed;
         if (instance == null)
         {
@@ -47,7 +51,7 @@ public class PlayerController : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         rb = GetComponent<Rigidbody>();
     }
-
+    
     // Update is called once per frame
     void Update()
     {
@@ -62,12 +66,16 @@ public class PlayerController : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.LeftShift) && !tired)
         {
+            playerAnim.SetBool("Running", true);
+
             cameraBalance = Mathf.MoveTowards(cameraBalance, 1, cameraChangeSpeed * Time.deltaTime);
             speed = sprintSpeed;
             currStamina = Mathf.Clamp(currStamina - Time.deltaTime * staminaDecaySpeed, 0, maxStamina);
         }
         else
         {
+            playerAnim.SetBool("Running", false);
+
             cameraBalance = Mathf.MoveTowards(cameraBalance, 0, cameraChangeSpeed * Time.deltaTime);
             speed = baseSpeed;
             currStamina = Mathf.Clamp(currStamina + Time.deltaTime * staminaRegenSpeed, 0, maxStamina);
@@ -108,6 +116,24 @@ public class PlayerController : MonoBehaviour
     
     void Move(Vector2 _axis, float _speed)
     {
+        if (_axis.sqrMagnitude > 0)
+        {
+            playerAnim.SetBool("Walking", true);
+        }
+        else
+        {
+            playerAnim.SetBool("Walking", false);
+
+        }
+        if (_axis.x > 0)
+        {
+            sp.flipX = !flipSprite;
+        }
+        else if(_axis.x < 0)
+        {
+            sp.flipX = flipSprite;
+
+        }
         Vector3 move = _axis.y * transform.forward * _speed + _axis.x * transform.right * _speed;
         move.y = rb.linearVelocity.y;
         rb.linearVelocity = move;
@@ -115,6 +141,7 @@ public class PlayerController : MonoBehaviour
     
     void Jump(float _height)
     {
+        playerAnim.SetTrigger("Jump");
         rb.linearVelocity = new Vector3(rb.linearVelocity.x, _height, rb.linearVelocity.z);
     }
     
