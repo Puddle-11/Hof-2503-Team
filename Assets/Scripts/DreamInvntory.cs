@@ -39,8 +39,21 @@ public class DreamInvntory : MonoBehaviour
     private void HitEndScreen()
     {
         Debug.Log("Finished Level");
+       GameManager.Instance.statePause();
+        GameManager.Instance.menuWin.SetActive(true);
     }
-  
+
+    public void youLose()
+    {
+        GameManager.Instance.timer -= Time.deltaTime;
+        if (GameManager.Instance.timer <= 0)
+        {
+            youLose();
+        }
+        GameManager.Instance.statePause();
+        GameManager.Instance.menuLose.SetActive(true);
+    }
+
     public void CollectDream(float _val)
     {
         dreamBar += _val;

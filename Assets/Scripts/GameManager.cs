@@ -8,11 +8,12 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
-    [SerializeField] GameObject menuPause;
-    [SerializeField] GameObject menuActive;
-    [SerializeField] GameObject menuWin;
-    [SerializeField] GameObject menuLose;
+    [SerializeField] public GameObject menuPause;
+    [SerializeField] public GameObject menuActive;
+    [SerializeField] public GameObject menuWin;
+    [SerializeField] public GameObject menuLose;
 
+    [SerializeField] public float timer = 600f;
     [SerializeField] TMP_Text enemyCountText;
     public Image playerHPBar;
 
@@ -31,6 +32,8 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        time();
+
         if (Input.GetButtonDown("Cancel"))
         {
             if (menuActive == null)
@@ -45,6 +48,15 @@ public class GameManager : MonoBehaviour
             }
         }
 
+    }
+
+    public void time()
+    {
+        timer -= Time.deltaTime;
+        if (timer <= 0)
+        {
+            youLose();
+        }
     }
 
     public void statePause()
