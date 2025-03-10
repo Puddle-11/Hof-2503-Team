@@ -672,6 +672,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 17471091}
     - target: {fileID: 4603868925883601030, guid: c121cc90723c9c0498b7e4ce206d0b81, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4603868925883601030, guid: c121cc90723c9c0498b7e4ce206d0b81, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4603868925883601030, guid: c121cc90723c9c0498b7e4ce206d0b81, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 17471086}
@@ -679,6 +687,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 17471086}
+    - target: {fileID: 4603868925883601030, guid: c121cc90723c9c0498b7e4ce206d0b81, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4603868925883601030, guid: c121cc90723c9c0498b7e4ce206d0b81, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6828958554934547169, guid: c121cc90723c9c0498b7e4ce206d0b81, type: 3}
       propertyPath: m_Name
       value: Canvas
