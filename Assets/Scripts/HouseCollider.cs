@@ -12,7 +12,10 @@ public class HouseCollider : MonoBehaviour
 	{
 		for (int i = 0; i < allDreams.Length; i++)
 		{
-			allDreams[i].failFuncEvent += HouseFailed;
+			if (allDreams != null)
+			{
+				allDreams[i].failFuncEvent += HouseFailed;
+			}
 		}
 	}
 	
