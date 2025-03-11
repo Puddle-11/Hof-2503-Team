@@ -2876,7 +2876,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 9.32, y: 9.02, z: 4.9}
+  m_Size: {x: 9.32, y: 8.77, z: 8.91}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &484361958 stripped
 GameObject:
@@ -3895,6 +3895,10 @@ PrefabInstance:
       value: Door
       objectReference: {fileID: 0}
     - target: {fileID: 7436949912499774877, guid: 560e6a6efa50f7c4489a9e2460d254b5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.97996
+      objectReference: {fileID: 0}
+    - target: {fileID: 7436949912499774877, guid: 560e6a6efa50f7c4489a9e2460d254b5, type: 3}
       propertyPath: m_LocalScale.y
       value: 3.35
       objectReference: {fileID: 0}
@@ -3908,7 +3912,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7436949912499774877, guid: 560e6a6efa50f7c4489a9e2460d254b5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 40.46
+      value: 40.435
       objectReference: {fileID: 0}
     - target: {fileID: 7436949912499774877, guid: 560e6a6efa50f7c4489a9e2460d254b5, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6381,7 +6385,6 @@ MonoBehaviour:
   doorstepRespawnPoint: {fileID: 365935460}
   houseFront: {fileID: 1209876955}
   allDreams:
-  - {fileID: 0}
   - {fileID: 281410608}
   - {fileID: 1978542206}
 --- !u!1 &978920058
@@ -7443,7 +7446,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorstepRespawnPoint: {fileID: 1829327621}
   houseFront: {fileID: 1502765457}
-  allDreams: []
+  allDreams:
+  - {fileID: 1869543903}
 --- !u!65 &1125947183
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7464,7 +7468,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 9.32, y: 8.96, z: 4.9}
-  m_Center: {x: -0.67, y: -0.3, z: 0.39}
+  m_Center: {x: 0.14, y: -0.3, z: 0.12}
 --- !u!1001 &1141941819
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10579,8 +10583,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 9.32, y: 15.07, z: 4.9}
-  m_Center: {x: -1.22, y: -3.28, z: 0.39}
+  m_Size: {x: 9.32, y: 15.07, z: 9.63}
+  m_Center: {x: -1.22, y: -3.28, z: 2.51}
 --- !u!4 &1656458539
 Transform:
   m_ObjectHideFlags: 0
@@ -12159,6 +12163,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2874539890073915173, guid: 1ce506faa94a4c740be9e823e58ccaee, type: 3}
   m_PrefabInstance: {fileID: 1869543901}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1869543903 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4917311347787708351, guid: 1ce506faa94a4c740be9e823e58ccaee, type: 3}
+  m_PrefabInstance: {fileID: 1869543901}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cf4bccaf3b7da2409ea6c977434755d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1871517631
 GameObject:
   m_ObjectHideFlags: 0
@@ -12501,7 +12516,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorstepRespawnPoint: {fileID: 597178560}
   houseFront: {fileID: 1295127962}
-  allDreams: []
+  allDreams:
+  - {fileID: 2137495646}
 --- !u!65 &1956605298
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13285,6 +13301,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 560e6a6efa50f7c4489a9e2460d254b5, type: 3}
+--- !u!114 &2137495646 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4917311347787708351, guid: 1ce506faa94a4c740be9e823e58ccaee, type: 3}
+  m_PrefabInstance: {fileID: 872668002}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cf4bccaf3b7da2409ea6c977434755d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2142540598
 GameObject:
   m_ObjectHideFlags: 0
@@ -13338,8 +13365,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 9.32, y: 9, z: 4.9}
-  m_Center: {x: -0.67, y: -0.28, z: 0.39}
+  m_Size: {x: 9.32, y: 9, z: 8.55}
+  m_Center: {x: -0.67, y: -0.28, z: 2.19}
 --- !u!4 &2142540601
 Transform:
   m_ObjectHideFlags: 0
